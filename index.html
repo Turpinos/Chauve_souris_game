@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap" rel="stylesheet">
+    <title>Menu du jeu</title>
+</head>
+<body>
+
+    <div id="rules">
+        <aside id="bat_sprite"></aside>
+        <aside id="hibou"></aside>
+        <aside id="mouche"></aside>
+        <aside id="hibou2"></aside>
+        <h1>Menu</h1>
+        <h2>Quelque règles:</h2>
+        <ul>
+            <li>Tu es une Chauve-souris:</li>
+            <li>Tu dois donc éviter les Hiboux pour ne pas perdre de vie.</li>
+            <li>Déplace-toi grâce à <span id="depl"></span>.</li>
+            <li>Mange les Mouches grâce à <span id="act"></span> pour gagne des points.</li>
+            <li>Ne pas réussir à manger une Mouche dans les 15sec ou se faire toucher par un Hibou fais perdre une vie.</li>
+            <li>Tu as 3 vies.</li>
+            <li>Presse "P" pour mettre pause pendant.</li>
+            <li>La difficulée augmente pendant la partie.</li>
+        </ul>
+
+        <p>Record actuel:<span id="record"></span></p>
+
+        <a href="sprite_anim3_js.html">Lance la partie</a>
+    </div>
+    <article>
+        <h1>Réglage</h1>
+        <h2>Déplacements:</h2>
+        <p id="desc-reglage">Appuie sur Modifier, ensuite sur une touche.</p>
+        <form>
+            <div>
+                <label for="upSet">Haut: </label>
+                <div>
+                    <button id="upSetButton">Modifier</button>
+                    <p id="upSet"></p>
+                </div>
+            </div>
+            <div>
+                <label for="downSet">Bas: </label>
+                <div>
+                    <button id="downSetButton">Modifier</button>
+                    <p id="downSet"></p>
+                </div>
+            </div>
+            <div>
+                <label for="leftSet">Gauche: </label>
+                <div>
+                    <button id="leftSetButton">Modifier</button>
+                    <p id="leftSet"></p>
+                </div>
+            </div>
+            <div>
+                <label for="rightSet">Droite: </label>
+                <div>
+                    <button id="rightSetButton">Modifier</button>
+                    <p id="rightSet"></p>
+                </div>
+            </div>
+            <div>
+                <label for="activeSet">Action: </label>
+                <div>
+                    <button id="activeSetButton">Modifier</button>
+                    <p id="activeSet"></p>
+                </div>
+            </div>
+        </form>
+    </article>
+    <script src="index-script.js" type="text/javascript"></script>
+</body>
+</html>

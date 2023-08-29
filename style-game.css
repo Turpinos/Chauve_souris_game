@@ -1,0 +1,88 @@
+body {
+    background: url("bkg/wood-by-night-desk.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin : 0;
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+    font-family: 'Handjet', cursive;
+}
+
+a{
+    font-size: 1.5rem;
+    margin-block: 2rem;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+a:hover{
+    transform: scale(0.9);
+}
+
+#bat_sprite {
+    /*display:block;*/
+    /*margin: auto;*/
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 100px;
+    /* border: solid 1px red; */
+    width: 100px;
+    height: 100px;
+    
+}
+
+#hibou1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+}
+
+#hibou2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 4;
+}
+
+#mouche{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    /* border: solid 1px red; */
+}
+
+.left {
+    transform:scaleX(-1);
+}
+.right {
+    transform:scaleX(1);
+}
+
+#pScore{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    margin-right: 2rem;
+    z-index: 10;
+}
+
+#pLife{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 11;
+}
+
+#scoreText{
+    font-size: 35px;
+}
+
+#pts{
+    font-size: 35px;
+}
