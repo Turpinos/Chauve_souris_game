@@ -1,3 +1,5 @@
+if(screen.availWidth >= 1920){
+
 let bestScore = document.getElementById('record');
 bestScore.innerText = ` ${localStorage.getItem('highScore')? localStorage.getItem('highScore') : 0}`;
 
@@ -172,3 +174,13 @@ buttonSetRight.addEventListener('click', function(e){
 document.getElementById('depl').innerText = `"${localStorage.getItem('nameUpKey')} + ${localStorage.getItem('nameDownKey')} + ${localStorage.getItem('nameLeftKey')} + ${localStorage.getItem('nameRightKey')}"`;
 
 document.getElementById('act').innerText = `"${localStorage.getItem('nameActiveSet')}"`;
+
+}else{
+
+    document.body.innerHTML = '';
+    document.body.innerHTML = "Ce jeux a été conçu pour fonctionner sur un écran Full HD minimum( 1920 x 1080 )";
+    document.body.style.margin = 'auto';
+    document.body.style.background = "white";
+    document.body.style.color = "black";
+    document.body.style.fontSize = "1.25rem";
+}

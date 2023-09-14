@@ -1,3 +1,4 @@
+if(screen.availWidth >= 1920){
 /*------------------- Animated Bat by EJ --------------------*/
 let batSprite = document.getElementById('bat_sprite');
 
@@ -537,11 +538,12 @@ function colWithOwl(owl){
                     batSprite.style.opacity = 1;
                     i = true;
                 }
-            },200);
+            },250);
             setTimeout(() => {clearInterval(deg);
-                batSprite.style.opacity = 1;
-            }, 1600);
-            setTimeout(() => {delete deg}, 1600);
+                            delete deg;
+                            batSprite.style.opacity = 1;
+                            
+                            }, 1600);
 
         }
 
@@ -916,6 +918,8 @@ setInterval(() =>{
             this.clearInterval(interFly);
             timingFly = 3000;
             displayFly();
+            this.clearInterval(interOwl);
+            this.clearInterval(interOwl2);
             timeInter = 450;
             timeResetInter = 380;
             displayOwl()
@@ -938,3 +942,13 @@ function displayFly() {this.interFly = setInterval(() =>{
 }
 
 displayFly();
+
+}else{
+
+    document.body.innerHTML = '';
+    document.body.innerHTML = "Ce jeux a été conçu pour fonctionner sur un écran Full HD minimum( 1920 x 1080 )";
+    document.body.style.margin = 'auto';
+    document.body.style.background = "white";
+    document.body.style.color = "black";
+    document.body.style.fontSize = "1.25rem";
+}
