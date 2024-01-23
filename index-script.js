@@ -1,4 +1,4 @@
-if(screen.availWidth >= 1920){
+if(screen.availWidth >= 1250){
 
 let bestScore = document.getElementById('record');
 bestScore.innerText = ` ${localStorage.getItem('highScore')? localStorage.getItem('highScore') : 0}`;

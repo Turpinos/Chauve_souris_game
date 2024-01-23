@@ -1,4 +1,4 @@
-if(screen.availWidth >= 1920){
+if(screen.availWidth >= 1250){
 /*------------------- Animated Bat by EJ --------------------*/
 let batSprite = document.getElementById('bat_sprite');
 
